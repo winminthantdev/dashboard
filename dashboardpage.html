@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Dashboard page</title>
+    <link rel="shortcut icon" href="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/logo-symbol.svg" width="32" height="32" type="image/svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+        <!--        Start Nav Bar Section-->
+        <div class="w-full border-b bg-white flex gap-8 fixed py-4 px-8 z-10">
+            <div class="w-auto md:w-2/12">
+                <div class="w-1/2 hidden lg:flex items-center">
+                    <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/logo.svg" class="w-full" alt="sitelogo">
+                </div>
+                <div class="w-12 h-12 flex lg:hidden items-center gap-8">
+                    <div class="text-gray-500 flex flex-col cursor-pointer">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </div>
+                    <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/logo-symbol.svg" class="w-full h-full" alt="sitelogo" />
+                </div>
+            </div>
+            <div class="w-full md:w-10/12">
+                <div class="flex justify-between items-center">
+
+                    <form class="text-gray-300 hidden lg:flex items-center" action="" method="">
+                        <div class="relative">
+                            <div class="absolute left-2 top-2.5"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <input type="text" name="search" id="search" class="border border-gray-300 rounded-lg py-2 pl-8" placeholder="Type to search..." />
+                        </div>
+                    </form>
+
+                    <div class="w-full flex justify-end items-center gap-8">
+
+                        <div class="w-8 h-8 text-lg flex justify-center items-center rounded-full hover:bg-gray-300 relative">
+                            <a href="javascript:void(0);" class="">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span class="bg-blue-600 text-white text-xs rounded-full px-2 absolute -right-2 top-0">2</span>
+                            </a>
+                        </div>
+
+                        <div class="w-8 h-8 text-lg flex justify-center items-center rounded-full hover:bg-gray-300 relative">
+                            <a href="javascript:void(0);" class="text-center">
+                                <i class="fa-regular fa-bell"></i>
+<!--                            <span class="bg-blue-600 text-white text-xs rounded-full px-2 absolute -right-2 top-0">2</span>-->
+                            </a>
+                        </div>
+                        
+                        <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-transparent hover:border-2 hover:border-blue-600">
+                            <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/dashboards/1/avatar-male.png" class="" alt="profile" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        End Nav Bar Section-->
+
+        <!--        Start Sidebar Menu-->
+        <div class="hidden lg:w-2/12 h-screen lg:flex overflow-auto fixed left-0 top-0 pt-24 px-4">
+            <ul class="list-none text-sm text-gray-700 flex flex-col gap-2">
+                <li class="bg-blue-500 text-white rounded-lg  p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-plus"></i><span class="ml-2">Connect New Account</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-home"></i><span class="ml-2">Dashboard</span></a></li>
+                <li class="px-4"><span class="uppercase">Analytics</span></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-signal"></i><span class="ml-2">Performance</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-arrow-pointer"></i><span class="ml-2">Hotjar</span></a></li>
+                <li class="px-4"><span class="uppercase">Support</span></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-signal"></i><span class="ml-2">Tickets</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-user"></i><span class="ml-2">Agents</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-users"></i><span class="ml-2">Customers</span></a></li>
+
+                <li class="px-4"><span class="uppercase">Shop</span></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-folder"></i><span class="ml-2">Product</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-bell"></i><span class="ml-2">Orders</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-poll"></i><span class="ml-2">Report</span></a></li>
+
+                <li class="px-4"><span class="uppercase"></span></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-gear"></i><span class="ml-2">Settings</span></a></li>
+                <li class="rounded-lg hover:bg-gray-300 p-3"><a href="javascript:void(0);" class=""><i class="fa-solid fa-right-from-bracket"></i><span class="ml-2">Logout</span></a></li>
+            </ul>
+        </div>
+        <!--        End Sidebar Menu-->
+
+        <!--        Start Content Section-->
+        <div class="w-full lg:w-10/12 space-y-4 pt-24 px-4 ml-auto">
+            <div class="w-full">
+                <div class="py-2"><span class="text-md font-bold mr-2">Hey Mariana</span>-<span class="text-gray-700 ml-2">here's what's happening with your store today</span></div>
+            </div>
+
+            <div class="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <div class="border rounded-lg p-4">
+                    <div class="text-sm text-gray-500 uppercase mb-4">Today's Sale</div>
+                    <div class="w-full flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">$12,426</h3>
+                        <p class="text-green-500">+ 36% <i class="fa-solid fa-arrow-up fa-xs"></i></p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <div class="text-sm text-gray-500 uppercase mb-4">Total Sale</div>
+                    <div class="w-full flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">$2,38,485</h3>
+                        <p class="text-red-500">- 14% <i class="fa-solid fa-arrow-down fa-xs"></i></p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <div class="text-sm text-gray-500 uppercase mb-4">Total Orders</div>
+                    <div class="w-full flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">84,382</h3>
+                        <p class="text-green-500">+ 36% <i class="fa-solid fa-arrow-up fa-xs"></i></p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <div class="text-sm text-gray-500 uppercase mb-4">Total Customers</div>
+                    <div class="w-full flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">33,493</h3>
+                        <p class="text-green-500">+ 36% <i class="fa-solid fa-arrow-up fa-xs"></i></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full grid lg:grid-cols-3 gap-4">
+
+                <div class="w-full lg:col-span-2 border rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+
+                        <h1 class="text-lg font-semibold">Sales Report</h1>
+
+                        <ul class="list-none flex gap-2">
+                            <li class="border border-gray-900 rounded-lg hover:bg-gray-100 px-2.5 py-1.5"><a href="javascript:void(0);">12 Months</a></li>
+                            <li class="border-gray-900 rounded-lg hover:bg-gray-100 px-2.5 py-1.5"><a href="javascript:void(0);">6 Months</a></li>
+                            <li class="border-gray-900 rounded-lg hover:bg-gray-100 px-2.5 py-1.5"><a href="javascript:void(0);">30 Days</a></li>
+                            <li class="border-gray-900 rounded-lg hover:bg-gray-100 px-2.5 py-1.5"><a href="javascript:void(0);">7 Days</a></li>
+                        </ul>
+
+                        <button type="button" class="border rounded-lg shadow-sm hover:bg-gray-100 px-2.5 py-1.5"><i class="fa-solid fa-file-arrow-down"></i><span class="ml-2">Export to CSV</span></button>
+
+                    </div>
+
+                    <div class="w-full">
+                        <div id="chart"></div>
+                    </div>
+
+                </div>
+
+                <div class="w-full border rounded-lg p-4 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">Traffic Sources</h3>
+                        <select class="text-sm rounded-lg px-2.5 py-1.5">
+                            <option value="0">This Year</option>
+                            <option value="1">Last 30 Days</option>
+                            <option value="2" selected>Last 7 Days</option>
+                        </select>
+                    </div>
+
+                    <div class="">
+                        <div class="text-md flex justify-between items-center mb-4">
+                            <p>Direct</p>
+                            <p>1,43,382</p>
+                        </div>
+
+                        <div class="w-full h-2 rounded-full bg-gray-100 overflow-hidden">
+                            <div class="w-[65%] h-full rounded-full bg-blue-500"></div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="text-md flex justify-between items-center mb-4">
+                            <p>Referral</p>
+                            <p>87,974</p>
+                        </div>
+
+                        <div class="w-full h-2 rounded-full bg-gray-100 overflow-hidden">
+                            <div class="w-[50%] h-full rounded-full bg-blue-500"></div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="text-md flex justify-between items-center mb-4">
+                            <p>Social Media</p>
+                            <p>45,211</p>
+                        </div>
+
+                        <div class="w-full h-2 rounded-full bg-gray-100 overflow-hidden">
+                            <div class="w-[35%] h-full rounded-full bg-blue-500"></div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="text-md flex justify-between items-center mb-4">
+                            <p>Twitter</p>
+                            <p>21,893</p>
+                        </div>
+
+                        <div class="w-full h-2 rounded-full bg-gray-100 overflow-hidden">
+                            <div class="w-[25%] h-full rounded-full bg-blue-500"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="w-full grid lg:grid-cols-3 gap-4">
+
+                <div class="w-full lg:col-span-2 border rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+
+                        <div class="">
+                            <h1 class="text-sm font-semibold">Transitions</h1>
+                            <p class="text-xs text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+                        </div>
+
+                        <a href="javascript:void(0);" class="text-xs text-gray-500 font-bold tracking-wider hover:text-gray-900 uppercase">See All Transitions <i class="fa-solid fa-chevron-right"></i></a>
+
+                    </div>
+
+                    <div class="mt-8 space-y-6">
+                        <div class="w-full grid grid-cols-2 lg:grid-cols-5 gap-4">
+
+                            <div class="order-0">
+                                <div class="w-1/2 lg:w-full bg-green-100 text-green-900 rounded-full flex justify-center items-center py-1"><span class="w-2 h-2 bg-green-500 block rounded-full"></span><span class="text-xs ml-2">Completed</span></div>
+                            </div>
+
+                            <div class="col-span-3 flex justify-between items-center order-2 gap-4">
+                                <div class="">
+                                    <h1 class="text-sm font-bold">Visa card **** 4831</h1>
+                                    <p class="text-xs text-gray-500">Card payment</p>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-bold">$182.94</h1>
+                                    <p class="text-xs text-gray-500">Jan 17, 2022</p>
+                                </div>
+
+                                <div class="flex justify-between items-center">
+                                    <p class="text-xs text-gray-500">Amazon</p>
+                                </div>
+                            </div>
+
+                            <div class="order-1 lg:order-3 flex justify-end items-center">
+                                <p class="text-gray-500 cursor-pointer"><i class="fa-solid fa-ellipsis"></i></p>
+                            </div>
+
+                        </div>
+                        <hr />
+                        <div class="w-full grid grid-cols-2 lg:grid-cols-5 gap-4">
+
+                            <div class="order-0">
+                                <div class="w-1/2 lg:w-full bg-green-100 text-green-900 rounded-full flex justify-center items-center py-1"><span class="w-2 h-2 bg-green-500 block rounded-full"></span><span class="text-xs ml-2">Completed</span></div>
+                            </div>
+
+                            <div class="col-span-3 flex justify-between items-center order-2 gap-4">
+                                <div class="">
+                                    <h1 class="text-sm font-bold">Mastercard **** 6442</h1>
+                                    <p class="text-xs text-gray-500">Card payment</p>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-bold">$99.00</h1>
+                                    <p class="text-xs text-gray-500">Jan 17, 2022</p>
+                                </div>
+
+                                <div class="flex justify-between items-center">
+                                    <p class="text-xs text-gray-500">Facebook</p>
+                                </div>
+                            </div>
+
+                            <div class="order-1 lg:order-3 flex justify-end items-center">
+                                <p class="text-gray-500 cursor-pointer"><i class="fa-solid fa-ellipsis"></i></p>
+                            </div>
+
+                        </div>
+                        <hr />
+                        <div class="w-full grid grid-cols-2 lg:grid-cols-5 gap-4">
+
+                            <div class="order-0">
+                                <div class="w-1/2 lg:w-full bg-yellow-100 text-green-900 rounded-full flex justify-center items-center py-1"><span class="w-2 h-2 bg-yellow-500 block rounded-full"></span><span class="text-xs ml-2">Panding</span></div>
+                            </div>
+
+                            <div class="col-span-3 flex justify-between items-center order-2 gap-4">
+                                <div class="">
+                                    <h1 class="text-sm font-bold">Account ****882</h1>
+                                    <p class="text-xs text-gray-500">Bank payment</p>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-bold">$182.94</h1>
+                                    <p class="text-xs text-gray-500">Jan 17, 2022</p>
+                                </div>
+
+                                <div class="flex justify-between items-center">
+                                    <p class="text-xs text-gray-500">Amazon</p>
+                                </div>
+                            </div>
+
+                            <div class="order-1 lg:order-3 flex justify-end items-center">
+                                <p class="text-gray-500 cursor-pointer"><i class="fa-solid fa-ellipsis"></i></p>
+                            </div>
+
+                        </div>
+                        <hr />
+                        <div class="w-full grid grid-cols-2 lg:grid-cols-5 gap-4">
+
+                            <div class="order-0">
+                                <div class="w-1/2 lg:w-full bg-red-100 text-green-900 rounded-full flex justify-center items-center py-1"><span class="w-2 h-2 bg-red-500 block rounded-full"></span><span class="text-xs ml-2">Canceled</span></div>
+                            </div>
+
+                            <div class="col-span-3 flex justify-between items-center order-2 gap-4">
+                                <div class="">
+                                    <h1 class="text-sm font-bold">VAmex card **** 5666</h1>
+                                    <p class="text-xs text-gray-500">Card payment</p>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-bold">$199.24</h1>
+                                    <p class="text-xs text-gray-500">Jan 17, 2022</p>
+                                </div>
+
+                                <div class="flex justify-between items-center">
+                                    <p class="text-xs text-gray-500">Amazon Prime</p>
+                                </div>
+                            </div>
+
+                            <div class="order-1 lg:order-3 flex justify-end items-center">
+                                <p class="text-gray-500 cursor-pointer"><i class="fa-solid fa-ellipsis"></i></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full border rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+
+                        <div class="">
+                            <h1 class="text-sm font-semibold">Recent Customers</h1>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit ametis.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex justify-between items-center gap-4">
+                            <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/dashboards/1/avatar-male.png" class="w-12 h-12" alt="user" />
+                            <div class="w-full">
+                                <h1 class="text-sm font-bold">Jenny Wilson</h1>
+                                <p class="text-xs text-gray-500">w.lawson@example.com</p>
+                            </div>
+
+                            <div class="text-end">
+                                <h1 class="text-sm">$11,234</h1>
+                                <p class="text-xs text-gray-500">Austin</p>
+                            </div>
+
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/dashboards/1/avatar-male-2.png" class="w-12 h-12" alt="user" />
+                            <div class="w-full">
+                                <h1 class="text-sm font-bold">Devon Lane</h1>
+                                <p class="text-xs text-gray-500">dat.roberts@example.com</p>
+                            </div>
+
+                            <div class="text-end">
+                                <h1 class="text-sm">$11,159</h1>
+                                <p class="text-xs text-gray-500">New York</p>
+                            </div>
+
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/dashboards/1/avatar-female-2.png" class="w-12 h-12" alt="user" />
+                            <div class="w-full">
+                                <h1 class="text-sm font-bold">Jane Cooper</h1>
+                                <p class="text-xs text-gray-500">jgraham@example.com</p>
+                            </div>
+
+                            <div class="text-end">
+                                <h1 class="text-sm">$10,483</h1>
+                                <p class="text-xs text-gray-500">Toledo</p>
+                            </div>
+
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <img src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/dashboards/1/avatar-male-3.png" class="w-12 h-12" alt="user" />
+                            <div class="w-full">
+                                <h1 class="text-sm font-bold">Dianne Russell</h1>
+                                <p class="text-xs text-gray-500">curtis.d@example.com</p>
+                            </div>
+
+                            <div class="text-end">
+                                <h1 class="text-sm">$9,084</h1>
+                                <p class="text-xs text-gray-500">Naperville</p>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-8">
+                        <a href="javascript:void(0);" class="text-xs text-gray-500 font-bold tracking-wider hover:text-gray-900 uppercase">See all Customers <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--        End Content Section-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript">
+        var options = {
+            series: [{
+                name: 'New User',
+                data: [31, 40, 28, 51, 42, 54, 54, 54, 64, 64, 84, 109]
+            }, {
+                name: 'Returning User',
+                data: [11, 32, 45, 32, 34, 52, 41, 46, 64, 73, 24, 68]
+            }],
+            chart: {
+                height: 350,
+                type: 'area',
+                toolbar:{
+                    show: false,
+                },
+                zoom:{
+                    enabled: false,
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                type: 'month',
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            },
+            tooltip: {
+                x: {
+                    format: 'MMM'
+                },
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+    </script>
+</body>
+</html>
